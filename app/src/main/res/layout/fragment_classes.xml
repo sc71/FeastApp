@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:text="Enrolled Classes"
-            android:textSize="24sp" />
+            android:textSize="34sp"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/enrolled_classes"
@@ -28,8 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:text="Suggested Classes"
-            android:textSize="24sp">
-        </TextView>
+            android:textSize="34sp"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/suggested_classes"
