@@ -12,9 +12,6 @@ import com.example.feastapp2.databinding.FragmentResourcesBinding
 
 class ResourcesFragment : Fragment() {
     private var _binding: FragmentResourcesBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -22,16 +19,9 @@ class ResourcesFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        //val homeViewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
-
         _binding = FragmentResourcesBinding.inflate(inflater, container, false)
-        val root: View = binding.root
 
-        //val textView: TextView = binding.textHome
-        /*homeViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }*/
-        return root
+        return binding.root
     }
 
     override fun onDestroyView() {
