@@ -10,6 +10,9 @@
         android:layout_height="wrap_content"
         android:text="Resources"
         android:textSize="34sp"
-        android:paddingTop="8dp"/>
+        android:paddingTop="8dp"
+        android:paddingStart="8dp"
+        android:textColor="@color/orange"
+        android:fontFamily="@font/montserrat_semibold"/>
 
 </FrameLayout>
