@@ -32,4 +32,9 @@
         android:name="com.example.feastapp2.ui.ResourcesFragment"
         android:label="@string/title_resources"
         tools:layout="@layout/fragment_resources" />
+    <fragment
+        android:id="@+id/navigation_chicken"
+        android:name="com.example.feastapp2.ChickenRecipe"
+        android:label="fragment_chicken_recipe"
+        tools:layout="@layout/fragment_chicken_recipe" />
 </navigation>

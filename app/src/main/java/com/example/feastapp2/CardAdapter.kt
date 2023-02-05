@@ -11,6 +11,8 @@ import com.example.feastapp2.R
 class CardAdapter(courseModelArrayList: ArrayList<CardModel>) :
     RecyclerView.Adapter<CardAdapter.ViewHolder>() {
     private val courseModelArrayList: ArrayList<CardModel>
+    var onItemClick: ((CardModel)->Unit)? = null
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardAdapter.ViewHolder {
         // to inflate the layout for each item of recycler view.
         val view: View = LayoutInflater.from(parent.context).inflate(R.layout.cardlayout, parent, false)
@@ -23,6 +25,9 @@ class CardAdapter(courseModelArrayList: ArrayList<CardModel>) :
         holder.courseName.text = model.getCourseName()
         holder.courseProgress.text = model.getProgress()
         holder.courseImg.setImageResource(model.getImage())
+        holder.itemView.setOnClickListener{
+            onItemClick?.invoke(courseModelArrayList[position])
+        }
     }
 
     override fun getItemCount(): Int {

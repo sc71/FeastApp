@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.feastapp2.CardModel
+import com.example.feastapp2.ChickenRecipe
 import com.example.feastapp2.R
 import com.example.feastapp2.databinding.FragmentRecipeBinding
 
@@ -40,6 +41,15 @@ class RecipeFragment : Fragment() {
 
         recipes.layoutManager = linearLayoutManager
         recipes.adapter = cardAdapter
+        //TODO: open new fragment with recipe
+        cardAdapter.onItemClick = {
+            /*val transaction = activity?.supportFragmentManager?.beginTransaction()
+            if (transaction != null) {
+                transaction.replace(R.id.navigation_recipes, ChickenRecipe())
+                //transaction.disallowAddToBackStack()
+                transaction.commit()
+            }*/
+        }
         return binding.root
     }
 
