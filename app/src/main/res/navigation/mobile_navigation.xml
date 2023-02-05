@@ -15,13 +15,13 @@
         android:id="@+id/navigation_classes"
         android:name="com.example.feastapp2.ui.dashboard.ClassesFragment"
         android:label="@string/title_classes"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_classes" />
 
     <fragment
         android:id="@+id/navigation_goals"
         android:name="com.example.feastapp2.ui.notifications.GoalsFragment"
         android:label="@string/title_goals"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_goals" />
     <fragment
         android:id="@+id/navigation_recipes"
         android:name="com.example.feastapp2.ui.RecipeFragment"
