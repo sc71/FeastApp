@@ -9,10 +9,12 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:text="Your Current 30-Day Goal: Take a Walk"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/orange"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -28,11 +30,11 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="16dp"
-            android:src="@android:drawable/gallery_thumb" />
+            android:src="@drawable/ic_footprints" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -47,15 +49,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:text="Walk"
+                    android:text="13 out of 30 days"
+                    android:textColor="@color/teal_f"
+                    android:fontFamily="@font/montserrat_medium"
                     android:textSize="16sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="end"
-                    android:text="5 of 30 days"
-                    android:gravity="end"/>
             </LinearLayout>
             <ProgressBar
                 android:id="@+id/progressBar"
@@ -63,6 +60,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
+                android:progress="45"
                 android:paddingEnd="16dp" />
         </LinearLayout>
     </LinearLayout>

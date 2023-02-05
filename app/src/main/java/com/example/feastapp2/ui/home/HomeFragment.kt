@@ -33,9 +33,9 @@ class HomeFragment : Fragment() {
         postRV = binding.root.findViewById(R.id.news_feed)
 
         val newsModelArrayList: ArrayList<NewsModel> = ArrayList<NewsModel>()
-        newsModelArrayList.add(NewsModel("Course One", 23, R.drawable.ic_baseline_person_24))
-        newsModelArrayList.add(NewsModel("Course Two", 14, R.drawable.ic_baseline_person_24))
-        newsModelArrayList.add(NewsModel("Course Three", 32, R.drawable.ic_baseline_person_24))
+        newsModelArrayList.add(NewsModel("User A completed their 30-day walking goal!", 23, R.drawable.ic_baseline_person_24))
+        newsModelArrayList.add(NewsModel("User B completed their course on nutrition label reading!", 14, R.drawable.ic_baseline_person_24))
+        newsModelArrayList.add(NewsModel("User C completed their 30-day gym goal!", 32, R.drawable.ic_baseline_person_24))
 
         val newsAdapter = NewsAdapter(newsModelArrayList)
         val linearLayoutManager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)

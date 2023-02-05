@@ -28,11 +28,11 @@ class RecipeFragment : Fragment() {
         recipes = binding.root.findViewById(R.id.recipe_rv)
 
         val cardModelArrayList: ArrayList<CardModel> = ArrayList<CardModel>()
-        cardModelArrayList.add(CardModel("Recipe One", "Week 9 of 16", R.drawable.ic_recipe))
-        cardModelArrayList.add(CardModel("Recipe Two", "Week 2 of 8", R.drawable.ic_recipe))
-        cardModelArrayList.add(CardModel("Recipe Three", "Week 2 of 8", R.drawable.ic_recipe))
-        cardModelArrayList.add(CardModel("Recipe Four", "Week 2 of 8", R.drawable.ic_recipe))
-        cardModelArrayList.add(CardModel("Recipe Five", "Week 2 of 8", R.drawable.ic_recipe))
+        cardModelArrayList.add(CardModel("Recipe One", "chicken, vegetables", R.drawable.chicken_dinner))
+        cardModelArrayList.add(CardModel("Recipe Two", "vegetables", R.drawable.veggie))
+        cardModelArrayList.add(CardModel("Recipe Three", "noodles, vegetables", R.drawable.chow_mein))
+        cardModelArrayList.add(CardModel("Recipe Four", "chicken, vegetables", R.drawable.chicken_dinner))
+        cardModelArrayList.add(CardModel("Recipe Five", "vegetables", R.drawable.veggie))
 
 
         val cardAdapter = CardAdapter(cardModelArrayList)
